@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Initials Explainer</title>
+  <style>
+    body {
+      width: 300px;
+      padding: 15px;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      text-align: center;
+    }
+    h2 {
+      margin-top: 0;
+      color: #4285f4;
+    }
+    .status {
+      margin: 15px 0;
+      padding: 10px;
+      border-radius: 4px;
+    }
+    .not-configured {
+      background-color: #fff3cd;
+      color: #856404;
+    }
+    .configured {
+      background-color: #d4edda;
+      color: #155724;
+    }
+    button {
+      background-color: #4285f4;
+      color: white;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    button:hover {
+      background-color: #3367d6;
+    }
+    .instructions {
+      margin-top: 15px;
+      font-size: 14px;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Initials Explainer</h2>
+    
+    <div id="configStatus" class="status"></div>
+    
+    <button id="openOptions">Settings</button>
+    
+    <div class="instructions">
+      <p><strong>How to use:</strong></p>
+      <ol>
+        <li>Select initials or acronyms on any webpage</li>
+        <li>Right-click and select "Explain initials"</li>
+        <li>View the explanation in the popup</li>
+      </ol>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
